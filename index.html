@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-logo">AB<span>.</span></div>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact" class="nav-hire">Hire Me</a>
+      </div>
+      <div class="nav-burger" id="burger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- ── Hero ────────────────────────────────────────────────────── -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-eyebrow">Frontend Developer — Abuja, Nigeria</div>
+        <h1 class="hero-name">
+          Abigail
+          <span class="line2">Balogun.</span>
+        </h1>
+        <p class="hero-desc">
+          <strong>I build fast, honest, production-grade web apps</strong> for
+          the Nigerian market and beyond. I bring
+          <em>rigorous analytical thinking</em> to every line of React I write.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-amber">View my work ↓</a>
+          <a href="#contact" class="btn-ghost">Let's talk</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">Scroll to explore</div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ── About  ────────────────────────────────── -->
+    <div class="section-wrap" id="about">
+      <div class="section-label">About me</div>
+      <h2>Built different<br />from the start.</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <div class="about-avatar">AB</div>
+          <p>
+            I'm a <strong>Frontend Software Engineer</strong> with a B.Tech in
+            Microbiology from FUT Minna, and yes, that background is a feature,
+            not a bug. Science trained me to think in systems, isolate
+            variables, and
+            <em>never ship a broken hypothesis.</em>
+          </p>
+          <p>
+            I specialize in <strong>React.js</strong> and the modern JavaScript
+            ecosystem, architecting Single Page Applications that are
+            responsive, accessible, and built to scale. My work is particularly
+            focused on the <strong>Nigerian market</strong> — real users, real
+            constraints, real solutions.
+          </p>
+          <p>
+            When I'm not in VS Code, I'm probably thinking about why something
+            didn't work, or how to make something that does work even better.
+            That's just how scientists are wired.
+          </p>
+        </div>
+        <div class="about-cards reveal reveal-delay-2">
+          <div class="about-card">
+            <div class="about-card-num">2+</div>
+            <div class="about-card-label">
+              Years shipping production React apps
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-num">3+</div>
+            <div class="about-card-label">Live projects deployed on Vercel</div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-num">100%</div>
+            <div class="about-card-label">
+              Commitment to clean, readable code
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-num">1</div>
+            <div class="about-card-label">
+              Microbiology degree making me think differently
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ── Projects ────────────────────────────────────────────────── -->
+    <div class="section-wrap" id="projects">
+      <div class="section-label">Selected work</div>
+      <h2>Things I've<br />built and shipped.</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-index">01 / SaaS Platform</div>
+          <div class="project-name">Elite Events Dashboard</div>
+          <p class="project-desc">
+            A dual-mode SaaS platform bridging a secure admin inventory
+            dashboard with a public-facing storefront. Features persistent
+            storage via localStorage, dynamic sold-out logic, and continuous
+            deployment on Vercel.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">Vite</span>
+            <span class="stack-tag">CSS Grid</span>
+            <span class="stack-tag">react-router-dom</span>
+            <span class="stack-tag">localStorage API</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://elite-events-dashboard.vercel.app/"
+              target="_blank"
+              class="project-link"
+            >
+              Live demo
+              <svg
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M2 10L10 2M10 2H4M10 2v6" />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/Abiy333/Elite-Events-Dashboard"
+              target="_blank"
+              class="project-link"
+            >
+              GitHub
+              <svg
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M2 10L10 2M10 2H4M10 2v6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-index">02 / Discovery App</div>
+          <div class="project-name">React Movie Engine</div>
+          <p class="project-desc">
+            A dynamic movie discovery app powered by a live REST API. Features
+            real-time search with controlled React state, asynchronous JSON
+            fetching, and a personalized Favorites ecosystem for saving and
+            isolating titles.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">REST API</span>
+            <span class="stack-tag">CSS Grid</span>
+            <span class="stack-tag">Async/Await</span>
+            <span class="stack-tag">State Management</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://movie-site-theta-ten.vercel.app/"
+              target="_blank"
+              class="project-link"
+            >
+              Live demo
+              <svg
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M2 10L10 2M10 2H4M10 2v6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-index">03 / Technical Challenge</div>
+          <div class="project-name">Bincom Dev Assessment</div>
+          <p class="project-desc">
+            A frontend technical assessment demonstrating component
+            architecture, clean UI implementation, and production-grade React
+            patterns under real-world constraints.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">CSS</span>
+            <span class="stack-tag">Vercel</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://bincom-assessment-nine.vercel.app/"
+              target="_blank"
+              class="project-link"
+            >
+              Live demo
+              <svg
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M2 10L10 2M10 2H4M10 2v6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ── Skills ──────────────────────────────────────────────────── -->
+    <div class="section-wrap" id="skills">
+      <div class="section-label">Toolkit</div>
+      <h2>What I work<br />with every day.</h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-title">Frontend</div>
+          <div class="skill-list">
+            <span class="skill-pill">React.js</span>
+            <span class="skill-pill">JavaScript ES6+</span>
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-1">
+          <div class="skill-group-title">Styling</div>
+          <div class="skill-list">
+            <span class="skill-pill">Tailwind CSS</span>
+            <span class="skill-pill">Responsive Design</span>
+            <span class="skill-pill">CSS Grid</span>
+            <span class="skill-pill">Component Architecture</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-2">
+          <div class="skill-group-title">Developer Tools</div>
+          <div class="skill-list">
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">GitHub</span>
+            <span class="skill-pill">VS Code</span>
+            <span class="skill-pill">npm</span>
+            <span class="skill-pill">Vite</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-3">
+          <div class="skill-group-title">Deployment</div>
+          <div class="skill-list">
+            <span class="skill-pill">Vercel</span>
+            <span class="skill-pill">GitHub Pages</span>
+            <span class="skill-pill">Netlify</span>
+            <span class="skill-pill">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ── Resume ───────────────────────────────────────────────────── -->
+    <div class="section-wrap" id="resume">
+      <div class="section-label">Background</div>
+      <h2>Experience &amp;<br />Education.</h2>
+      <div class="resume-layout">
+        <div class="reveal">
+          <div class="resume-col-title">Work Experience</div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-body">
+                <div class="timeline-period">2022 – 2024</div>
+                <div class="timeline-role">Assistant General Secretary</div>
+                <div class="timeline-org">FECA Youth Organization</div>
+                <div class="timeline-notes">
+                  Managed project lifecycles and cross-functional team
+                  collaboration for high-impact community events. Built strong
+                  systems thinking and operational leadership skills.
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-body">
+                <div class="timeline-period">2021 – 2022</div>
+                <div class="timeline-role">Teaching Assistant</div>
+                <div class="timeline-org">Private School</div>
+                <div class="timeline-notes">
+                  Developed strong technical communication by breaking down
+                  complex logic into digestible concepts — a skill that directly
+                  informs how I write and document code today.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="resume-col-title">Education</div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-body">
+                <div class="timeline-period">2019 – 2025</div>
+                <div class="timeline-role">B.Tech in Microbiology</div>
+                <div class="timeline-org">
+                  Federal University of Technology, Minna
+                </div>
+                <div class="timeline-notes">
+                  A science degree that trained rigorous analytical thinking,
+                  experimental methodology, and data-driven problem solving —
+                  the same discipline I bring to frontend architecture.
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-body">
+                <div class="timeline-period">2025 — Present</div>
+                <div class="timeline-role">Frontend Engineering Programme</div>
+                <div class="timeline-org">Mentorship4Acceleration (M4ACE)</div>
+                <div class="timeline-notes">
+                  Intensive mentorship-led programme covering modern frontend
+                  development — React architecture, JavaScript ES6+, responsive
+                  UI, and production deployment workflows.
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-body">
+                <div class="timeline-period">2025 — Present</div>
+                <div class="timeline-role">Frontend Engineering Course</div>
+                <div class="timeline-org">TS Academy</div>
+                <div class="timeline-notes">
+                  Structured frontend curriculum with hands-on projects covering
+                  HTML5, CSS3, JavaScript, and React — reinforcing professional
+                  engineering standards and best practices.
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-body">
+                <div class="timeline-period">Self-directed</div>
+                <div class="timeline-role">Frontend Engineering</div>
+                <div class="timeline-org">React, JavaScript, Modern Web</div>
+                <div class="timeline-notes">
+                  Independently built and deployed production React
+                  applications, working through the entire stack — from
+                  architecture and styling to deployment and continuous
+                  delivery.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="resume-download">
+            <a
+              href="https://docs.google.com/document/d/100T9nuIXDMd2PXl9Yng67sxlK24ZccLL/edit?usp=sharing&ouid=102691968849607920182&rtpof=true&sd=true"
+              class="btn-amber"
+            >
+              Download CV ↓
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ── Contact ─────────────────────────────────────────────────── -->
+    <div class="section-wrap" id="contact">
+      <div class="section-label">Get in touch</div>
+      <h2>Let's build<br />something real.</h2>
+      <div class="contact-layout">
+        <div class="reveal">
+          <p>
+            I'm open to frontend roles, contract projects, and collaborations
+            that are worth the energy. If you're building something honest and
+            ambitious — I want to hear about it.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:abalogun333@gmail.com" class="contact-link">
+              <span class="contact-link-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+              </span>
+              abalogun333@gmail.com
+            </a>
+            <a
+              href="https://github.com/Abiy333"
+              target="_blank"
+              class="contact-link"
+            >
+              <span class="contact-link-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                  />
+                </svg>
+              </span>
+              github.com/Abiy333
+            </a>
+            <a href="tel:+2347043886759" class="contact-link">
+              <span class="contact-link-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"
+                  />
+                </svg>
+              </span>
+              +234 704 388 6759
+            </a>
+          </div>
+        </div>
+
+        <form
+          class="contact-form reveal reveal-delay-2"
+          onsubmit="handleSubmit(event)"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea
+              rows="5"
+              placeholder="Tell me about the project or opportunity..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-amber" id="submitBtn">
+            Send message →
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ── Footer ──────────────────────────────────────────────────── -->
+    <div class="divider"></div>
+    <footer>
+      <div class="footer-logo">AB<span>.</span></div>
+      <div class="footer-note">
+        Abigail Balogun © 2025 — Built with HTML, CSS & JS
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
