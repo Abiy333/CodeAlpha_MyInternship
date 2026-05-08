@@ -103,10 +103,24 @@ nav.scrolled {
 .nav-logo span {
   color: var(--amber);
 }
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden off-screen to the right */
+    height: 100vh;
+    width: 80%; /* Takes up 70% of the screen width */
+    background: var(--bg);
+    flex-direction: column;
+    justify-content: center;
+    transition: right 0.3s ease-in-out;
+  }
+
+  /* OPEN state: Bring it into view */
+  .nav-links.open {
+    right: 0;
+    z-index: 1000;
+  }
 }
 .nav-links a {
   font-size: 0.8rem;
